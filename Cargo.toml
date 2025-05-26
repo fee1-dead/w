@@ -1,5 +1,5 @@
 [package]
-name = "mw"
+name = "w"
 version = "0.1.0"
 description = "A minimalist library for MediaWiki APIs"
 license = "MIT OR Apache-2.0"

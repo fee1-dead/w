@@ -10,7 +10,7 @@ async fn main() -> color_eyre::Result<()> {
 
     let user = args().nth(1).expect("username");
 
-    let client = mw::ClientBuilder::new("https://meta.wikimedia.org/w/api.php")
+    let client = w::ClientBuilder::new("https://meta.wikimedia.org/w/api.php")
         .user_agent("fee1-dead/mw examples/blockfinder")
         .anonymous()?;
 
