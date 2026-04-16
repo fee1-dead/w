@@ -13,6 +13,7 @@ use crate::{Client, Params, Result};
 #[cfg(not(target_arch = "wasm32"))]
 use futures_util::future::BoxFuture;
 
+// on wasm32 our futures cannot be `Send`.
 #[cfg(target_arch = "wasm32")]
 type BoxFuture<'a, T> = Pin<Box<dyn Future<Output = T> + 'a>>;
 
